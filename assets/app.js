@@ -82,8 +82,9 @@ database.ref().on("child-added", function(childSnapshot) {
 var newRow = $("<tr>").append(
     $("<td>").text(name),
     $("<td>").text(dest),
-    $("<td>").text(firstTime),
-    $("<td>").text(freq),
+    $("<td>").text(freq), 
+    $("<td>").text(nextArrival),
+    $("<td>").text(minutesAway)
 );
 
 //make new row append to table
