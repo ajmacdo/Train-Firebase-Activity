@@ -1,37 +1,36 @@
-// var config = {
-// apiKey: "AIzaSyDrzIYMhO4lX2JXNDrni4O1i6D3jNypck4",
-// authDomain: "train-playing.firebaseapp.com",
-// databaseURL: "https://train-playing.firebaseio.com",
-// projectId: "train-playing",
-// storageBucket: "train-playing.appspot.com",
-// };
+var config = {
+apiKey: "AIzaSyDrzIYMhO4lX2JXNDrni4O1i6D3jNypck4",
+authDomain: "train-playing.firebaseapp.com",
+databaseURL: "https://train-playing.firebaseio.com",
+projectId: "train-playing",
+storageBucket: "train-playing.appspot.com",
+};
 
-// firebase.initializeApp(config);
+firebase.initializeApp(config);
 
 // firebase.database().ref().on()
 
-
-var config = {
-    apiKey: "AIzaSyB4Ws5gPo9gNW9x90uXnX6XZ4uqE5QjkUY",
-    authDomain: "countdownclicker.firebaseapp.com",
-    databaseURL: "https://countdownclicker.firebaseio.com",
-    storageBucket: "countdownclicker.appspot.com",
-    messagingSenderId: "435604262542"
-  };
+// // var config = {
+// //     apiKey: "AIzaSyB4Ws5gPo9gNW9x90uXnX6XZ4uqE5QjkUY",
+// //     authDomain: "countdownclicker.firebaseapp.com",
+// //     databaseURL: "https://countdownclicker.firebaseio.com",
+// //     storageBucket: "countdownclicker.appspot.com",
+// //     messagingSenderId: "435604262542"
+// //   };
   
-  firebase.initializeApp(config);
+//   firebase.initializeApp(config);
   
   // Create a variable to reference the database
   var database = firebase.database();
   
 //create button to add train
-$("#add-train-btn").on("click",) function(event) {
+$("#add-train-btn").on("click", function(event) {
     event.preventDefault();
 
 //create vars to store user inputs  
 var name = $("#train-name-input").val().trim();
   var dest = $("#destination-input").val().trim();
-  var firstTime = moment($(#"first-time-input").val().trim(), "MM/DD/YYYY").format("X");
+  var firstTime = moment($("#first-time-input").val().trim(), "__:__ military time").format("HH:mm"); //format('HHmm')
   var freq = $("#frequency-input").val().trim();
 
 //create object to hold added train data

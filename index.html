@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Train Times</title>
 
     <!-- Bootstrap -->
     <link
@@ -27,11 +27,12 @@
         width: 16.575%;
       }
     </style>
+    
   </head>
 
   <body>
     <div class="container">
-      <div class="jumbotron" style="background-color: black; color: white;">
+      <div class="jumbotron" style="background-color: rgb(14, 51, 68); color: white;">
         <h1 class="text-center">Anytime is Train Time</h1>
         <h3 class="text-center">
           A Comprehensive Directory of Available Trains
@@ -40,11 +41,11 @@
 
       <div class="row">
         <div class="col-md-12">
-          <!-- Current Employees-->
+    
           <div class="card mb-4">
-            <div class="card-header">Current Employees</div>
+            <div class="card-header">Current Trains</div>
             <div class="card-body">
-              <table class="table table-sm table-hover" id="employee-table">
+              <table class="table table-sm table-hover" id="train-table">
                 <thead>
                   <tr>
                     <th scope="col">Train Name</th>
@@ -86,7 +87,7 @@
       <label for="frequency-input">Frequency (minutes)</label>
       <input class="form-control" id="frequency-input" placeholder="15" type="text">
     </div>
-    <button class="btn btn-primary float-right" id="add-employee-btn">Submit</button>
+    <button class="btn btn-primary float-right" id="add-train-btn">Submit</button>
   </form>
 
 </div>
@@ -97,13 +98,15 @@
 </div>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.14.2/firebase-app.js"></script>
+   <!-- <script src="/__/firebase/7.14.2/firebase-app.js"></script>-->
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.14.2/firebase-analytics.js"></script>
+  <!--  <script src="/__/firebase/7.14.2/firebase-analytics.js"></script> -->
 
     <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+  <!--  <script src="/__/firebase/init.js"></script>-->
+
+<script src ="assets/app.js"></script>
   </body>
 </html>
