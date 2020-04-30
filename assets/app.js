@@ -62,7 +62,7 @@ $("#frequency-input").val("");
 //translate user inputs to new row after making this id'd as a firebase event that is a child added to the firebase snapshot
 database.ref().on("child_added", function(childSnapshot) {
     console.log(childSnapshot.val());
-})
+
 
 //store in variables...
   var name = childSnapshot.val().trainName;
