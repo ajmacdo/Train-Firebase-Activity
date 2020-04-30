@@ -35,9 +35,9 @@ var name = $("#train-name-input").val().trim();
 
 //create object to hold added train data
 var newTrain = {
-    train-name: name,
+    trainName: name,
     destination: dest,
-    first-time: firstTime,
+    firstTime: firstTime,
     frequency: freq
 };
 
@@ -45,30 +45,30 @@ var newTrain = {
 database.ref().push(newTrain);
 
 //log to console
-console.log(newEmp.name);
-console.log(newEmp.role);
-console.log(newEmp.start);
-console.log(newEmp.rate);
+console.log(newTrain.trainName);
+console.log(newTrain.destination);
+console.log(newTrain.firstTime);
+console.log(newTrain.frequency);
 
 alert("Train successfully added");
 
 //clear input fields
-#("train-name-input").val("")
-#("destination-input").val("")
-#("first-time-input").val("")
-#("frequency-input").val("")
+$("#train-name-input").val("");
+$("#destination-input").val("");
+$("#first-time-input").val("");
+$("#frequency-input").val("");
 });
 
 //translate user inputs to new row after making this id'd as a firebase event that is a child added to the firebase snapshot
-database.ref().on("child-added", function(childSnapshot) {
+database.ref().on("child_added", function(childSnapshot) {
     console.log(childSnapshot.val());
 })
 
 //store in variables...
-  var name = childSnapshot.val().Tname;
-  var dest = childSnapshot.val().Tdest;
-  var firstTime = childSnapshot.val().TfirstTime;
-  var freq = childSnapshot.val().Tfreq;
+  var name = childSnapshot.val().trainName;
+  var dest = childSnapshot.val().destination;
+  var firstTime = childSnapshot.val().firstTime;
+  var freq = childSnapshot.val().frequency;
 
 
   // train info
@@ -88,4 +88,5 @@ var newRow = $("<tr>").append(
 
 //make new row append to table
 $("#train-table > tbody").append(newRow);
+
 });
