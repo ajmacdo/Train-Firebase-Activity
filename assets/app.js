@@ -1,21 +1,22 @@
 var firebaseConfig = {
-    //new fbase credentials generated again 6.14:
+    //  new fbase credentials generated again 6.14: 
     apiKey: "AIzaSyDE5LGrD3kmrPujELG6OoamqhBOhepeW2w",
     authDomain: "revisiting-train-asgt.firebaseapp.com",
     databaseURL: "https://revisiting-train-asgt.firebaseio.com",
     projectId: "revisiting-train-asgt",
-    storageBucket: "revisiting-train-asgt.appspot.com"
-
-    // apiKey: "AIzaSyDvnD4hXZamWDdxop24f2om_S8H8pXc6PE",
-    // authDomain: "train-asgt.firebaseapp.com",
-    // databaseURL: "https://train-asgt.firebaseio.com",
-    // projectId: "train-asgt",
-    // storageBucket: "train-asgt.appspot.com",
-    // messagingSenderId: "57015589792",
-    // appId: "1:57015589792:web:a7ad2a0939ed148c0be2c5",
-    // measurementId: "G-N0CM2LWCYH"
+    storageBucket: "revisiting-train-asgt.appspot.com",
+    messagingSenderId: "1001366804507",
+    appId: "1:1001366804507:web:defdecbe28056eeb5bc0be",
+    measurementId: "G-9RZYXK4P68"
+        // apiKey: "AIzaSyDvnD4hXZamWDdxop24f2om_S8H8pXc6PE",
+        // authDomain: "train-asgt.firebaseapp.com",
+        // databaseURL: "https://train-asgt.firebaseio.com",
+        // projectId: "train-asgt",
+        // storageBucket: "train-asgt.appspot.com",
+        // messagingSenderId: "57015589792",
+        // appId: "1:57015589792:web:a7ad2a0939ed148c0be2c5",
+        // measurementId: "G-N0CM2LWCYH"
 };
-
 
 
 // Initialize Firebase
